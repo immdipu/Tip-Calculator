@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Epilogue:wght@500&family=Fredoka+One&family=Jua&family=Kumbh+Sans:wght@300&family=Overpass&family=Poppins:wght@500&family=Righteous&family=Roboto:wght@700&family=Space+Mono:wght@700&display=swap"
+    rel="stylesheet" />
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="main">
+    <h1>SPLI<br />TTER</h1>
+    <div class="container">
+      <div class="calculator">
+        <div class="childcalculator">
+          <div class="bill">
+            Bill <br />
+            <div>
+              <img class="img" src="./images/icon-dollar.svg" alt="" />
+              <input id="billinput" type="number" placeholder="0.00" />
+            </div>
+          </div>
+
+          <div class="tipcontaner">
+            <h2 class="selecttip">Select Tip %</h2>
+            <div class="tip">
+              <button class="childtip tipbtn" id="5">5%</button>
+              <button class="childtip tipbtn" id="10">10%</button>
+              <button class="childtip tipbtn" id="15">15%</button>
+              <button class="childtip tipbtn" id="25">25%</button>
+              <button class="childtip tipbtn" id="50">50%</button>
+              <div class="childtip">
+                <input class="childtip" type="number" name="" id="tipinput" placeholder="custom" />
+              </div>
+            </div>
+          </div>
+
+          <div class="bill">
+            Number of People
+            <p class="error hidden">can't be zero</p>
+
+            <div>
+              <img class="img" src="./images/icon-person.svg" alt="" />
+              <input id="peoplenumber" type="number" placeholder="0" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="result">
+        <div class="resultchild">
+          <div class="tiptotal">
+            <div class="tippername">
+              <h3>Tip Amount</h3>
+              / person
+            </div>
+            <div class="tipamount">
+              <p id="totaltipamount"></p>
+            </div>
+          </div>
+          <div class="tiptotal">
+            <div class="tippername">
+              <h3>Total</h3>
+              / person
+            </div>
+            <div class="tipamount">
+              <p id="totalamount">$0.00</p>
+            </div>
+          </div>
+          <div class="reset">
+            <button class="resetbtn" id="resetbtn" type="reset">RESET</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Dipu
+      Chaurasiya</a>.
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
